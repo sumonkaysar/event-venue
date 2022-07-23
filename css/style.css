@@ -7,3 +7,19 @@ body{
   font-family: 'Poppins', sans-serif;
   /* font-family: 'Roboto', sans-serif; */
 }
+.navbar-brand{
+  font-size: 22px;
+}
+.nav-link{
+  font-weight: 500;
+}
+.carousel-caption h1{
+  font-weight: 600;
+  font-size: 48px;
+}
+.moments-details h1{
+  font-size: 38px;
+}
+.moments-details a{
+  width: 230px;
+}
