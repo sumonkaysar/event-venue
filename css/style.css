@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
 
 body{
-  /* font-family: 'Inter', sans-serif; */
   /* font-family: 'Manrope', sans-serif; */
   font-family: 'Poppins', sans-serif;
 }
@@ -48,4 +47,23 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   background-color: #FF4E4E;
+}
+.client-reviews .card h6{
+  font-weight: 600;
+}
+
+/*-----------
+  FAQ section
+  ----------- */
+.faqs{
+  font-family: 'Inter', sans-serif;
+}
+.faqs .accordion-button{
+  box-shadow: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #383838;
+}
+.faqs .accordion-button:not(.collapsed)::after{
+  background-image: var(--bs-accordion-btn-icon);
 }
