@@ -1,6 +1,10 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
 
+html, body{
+  width: 100vw;
+  overflow-x: hidden;
+}
 body{
   /* font-family: 'Manrope', sans-serif; */
   font-family: 'Poppins', sans-serif;
@@ -10,6 +14,19 @@ body{
 }
 .nav-link{
   font-weight: 500;
+}
+.menu-btn{
+  border: none;
+  transition: opacity .3s;
+}
+.menu-btn:not(.collapsed){
+  opacity: .6;
+}
+.menu-btn:focus{
+  box-shadow: none;
+}
+#slider{
+  margin-top: 59px;
 }
 .carousel-caption h1{
   font-weight: 600;
@@ -66,4 +83,70 @@ body{
 }
 .faqs .accordion-button:not(.collapsed)::after{
   background-image: var(--bs-accordion-btn-icon);
+}
+
+/* toast */
+.discount-toast{
+  width: fit-content;
+  border-left-width: 8px !important;
+  z-index: 9;
+  right: 20px;
+}
+
+/* Mobile Device */
+@media (max-width: 767.99px){ 
+  #slider{
+    margin-top: 60px;
+  }
+  .carousel-item{
+    height: 580px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .carousel-item img{
+    height: 100%;
+    width: auto !important;
+    margin-left: 50%;
+    transform: translateX(-45%);
+  }
+  .carousel-caption h1{
+    font-size: 24px;
+  }  
+  .moments-details p{
+    font-size: 15px;
+  }
+  .moments-details h1, .section-title{
+    font-size: 19px;
+  }
+  .moments-banner, .moments-details{
+    width: 100% !important;
+  }
+  /* FAQ section */
+  .faqs .accordion-button{
+    font-size: 16px;
+  }
+  .faqs .accordion-body{
+    font-size: 14px;
+  }
+  /* toast */
+  .discount-toast{
+    right: 50%;
+    transform: translate(50%) !important;
+  }
+}
+/* medium device */
+@media (min-width: 768px) and (max-width: 991.99px){
+  .carousel-caption h1{
+    font-size: 30px;
+  }
+}
+
+/* Large Device */
+@media (min-width: 1200px){
+  .faqs{
+    width: 57% !important;
+  }
+  .faq-banner{
+    width: 40% !important;
+  }
 }
